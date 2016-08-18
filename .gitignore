@@ -2,5 +2,5 @@
 *.bbl
 *.blg
 *.log
-draft.pdf
-final.pdf
+*.exe
+*.pdf
