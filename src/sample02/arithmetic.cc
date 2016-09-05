@@ -16,6 +16,10 @@ int main()
   cout << "-3 = " << -3 << endl;    
   cout << "- - 3 = " << (- (- 3)) << endl; 
 
+  // mixed
+  cout << "-5 / 2 = " << -5 / 2 << endl;
+  cout << "-5 % 2 = " << -5 % 2 << endl;
+
   // binary operators: addition, subtraction...
   cout << "1 + 2 + 3 + 4 = " << 1 + 2 + 3 + 4 << endl;  
 
