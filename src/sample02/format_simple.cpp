@@ -9,7 +9,11 @@ int main(void)
     cout << "Input a number" << endl;
     cin >> input;
 
-    cout << "The formatted number is " << setiosflags(ios::fixed) << setprecision(1) << input << endl;
+    cout << "The formatted number is "
+         << setiosflags(ios::fixed)
+         << setprecision(1) 
+         << input 
+         << endl;
 
     return 0;
 }
