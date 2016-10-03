@@ -17,5 +17,13 @@ int main(void)
         cout << "No, " << x << " <= " << y << endl;
     }
 
+    cout << "unsigned  x == " << static_cast<unsigned int>(x)
+         << ", y == " << static_cast<unsigned int>(y)
+         << endl;
+
+    cout << "signed  x == " << static_cast<int>(x)
+         << ", y == " << static_cast<int>(y)
+         << endl;
+
     return 0;
 }
