@@ -66,9 +66,10 @@ int main(void)
     printPoint(p2);  
     cout << " is: " << point_distance(p1, p2) << endl;    
 	
-    Point points[10];
+    const int num_points = 4;
+    Point points[num_points];
     int count = 0;
-    cout << "Please enter a set of points (at most 10):";
+    cout << "Please enter a set of " << num_points << " points" << endl;
     
     double x, y;
     while(cin >> x >> y)
@@ -93,7 +94,7 @@ int main(void)
         swap(points[index], points[i]);
     }
 	
-    cout << "The points sorted by their distance: " << endl;
+    cout << "The points sorted by their distances to the origin: " << endl;
     for(int i = 0; i < count; ++i)
         printPoint(points[i]);
     
