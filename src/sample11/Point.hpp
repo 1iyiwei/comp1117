@@ -8,8 +8,8 @@ class Point
 {
 public:
     Point(void);
-    Point(float x, float y);
-    
+    Point(const float x, const float y);
+
     float distance(const Point & another) const;
 
     friend bool equal(const Point & p1, const Point & p2);
@@ -18,7 +18,7 @@ public:
     friend bool operator==(const Point & p1, const Point & p2);
     friend Point operator+(const Point & p1, const Point & p2);
 
-private:
+protected:
     float _x, _y;
 };
 
@@ -27,7 +27,7 @@ Point::Point(void)
     _x = _y = 0;
 }
 
-Point::Point(float x, float y)
+Point::Point(const float x, const float y)
 {
     _x = x;
     _y = y;
